@@ -8,7 +8,7 @@ app = Flask(__name__)
 def hello():
     return 'Hello from Flask running in Podman!'
 
-# New: current server time
+
 @app.route('/time')
 def get_time():
     now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
