@@ -13,17 +13,6 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Build Docker/Podman image
-        run: |
-
-
-
-
-
-
-
-
-
-
-          docker build --f .github/workflows/container -t container .
+        run: docker build -t container .
 
 

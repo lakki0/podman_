@@ -14,11 +14,6 @@ def get_time():
     now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     return f'Current server time: {now}'
 
-# New: dynamic greeting
-@app.route('/greet/<name>')
-def greet(name):
-    return f'Hello, {name.capitalize()}! Welcome to the Flask app in Podman.'
-
 # New: JSON health check/status
 @app.route('/status')
 def status():
