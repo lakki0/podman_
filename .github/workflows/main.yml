@@ -15,6 +15,15 @@ jobs:
       - name: Build Docker/Podman image
         run: |
 
-          docker build -t container .
+
+
+
+
+
+
+
+
+
+          docker build --f .github/workflows/container -t container .
 
 
